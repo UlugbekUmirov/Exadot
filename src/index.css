@@ -1,0 +1,95 @@
+@font-face {
+  font-display: swap;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Fonts/Golos Text_Black.woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Fonts/Golos Text_Bold.woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./Fonts/Golos Text_DemiBold.woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Fonts/Golos Text_Medium.woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Golos";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/Golos Text_Regular.woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Spoff";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Fonts/SpoofTrial-Bold.otf");
+}
+/*@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./Fonts/Gilroy-Bold.woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Fonts/Gilroy-ExtraBold.woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./Fonts/Gilroy-Black.woff2");
+} */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Golos";
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.container {
+  max-width: 1140px;
+}
+button {
+ align-items: center;
+ margin-bottom:5px ;
+ line-height: 29px;
+}
+button a{
+  align-items: center;
+}
+@media (max-width:1100px) {
+   .container{
+     padding: 0px 15px;
+  }
+}
+a {
+  text-decoration: none;
+}
+.content {
+  min-height: calc(86vh);
+}
