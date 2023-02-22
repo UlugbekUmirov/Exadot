@@ -100,7 +100,6 @@ const Homee = styled.div`
     font-weight: 400;
     font-size: 16px;
     color: #6e6d77;
-    min-height: 178px;
   }
   .section3Button {
     text-align: center;
@@ -267,7 +266,6 @@ const Homee = styled.div`
   }
   & .slider-title {
     margin: 0;
-
   }
   & .swiper-pagination-bullet-active {
     background-color: #2a2941 !important;
@@ -502,11 +500,11 @@ const Homee = styled.div`
     outline: 0;
     font-weight: 450;
     font-size: 20px;
+    resize: none;
     color: #2a2941;
   }
   textarea {
     height: 180px !important;
-   
   }
   .feedback-input:focus {
     border: 2px solid #5762f7;
@@ -1030,7 +1028,7 @@ const Homee = styled.div`
   }
   @media (max-width: 500px) {
     .section_1 img {
-      width: 100%;
+      width: 85%;
     }
     .section_2 img {
       width: 100%;
@@ -1051,6 +1049,9 @@ const Homee = styled.div`
     }
   }
   @media (max-width: 451px) {
+    .section_1 img {
+      width: 100%;
+    }
     .s9img {
       top: 12%;
       left: 30%;
@@ -1060,6 +1061,15 @@ const Homee = styled.div`
     .s9img {
       top: 7%;
       left: 30%;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .kurs3 {
+      opacity: 0;
+    }
+    .s9img {
+      opacity: 0;
     }
   }
 `;
@@ -2132,15 +2142,16 @@ export default function Home() {
                 >
                   <h2
                     className="accordion-header"
-                    id="headingOne"
+                    id="flush-headingOne"
                     style={{ border: "none!important" }}
                   >
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button  collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-controls="collapseOne"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
                       style={{ padding: "24px" }}
                     >
                       Полезен ли курс для тех, кто имеет поверхностные
@@ -2148,10 +2159,11 @@ export default function Home() {
                     </button>
                   </h2>
                   <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse "
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                    /*  data-bs-parent="#accordionExample" */
                   >
                     <div className="accordion-body">
                       <ul>
@@ -2174,23 +2186,25 @@ export default function Home() {
                     borderRadius: "16px",
                   }}
                 >
-                  <h2 className="accordion-header" id="headingTwo">
+                  <h2 className="accordion-header" id="flush-headingTwo">
                     <button
                       className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-controls="collapseTwo"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
                       style={{ padding: "24px" }}
                     >
                       Можно ли задавать вопросы преподавателю?
                     </button>
                   </h2>
                   <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                    /* data-bs-parent="#accordionExample" */
                   >
                     <div className="accordion-body">
                       <ul>
@@ -2213,23 +2227,24 @@ export default function Home() {
                     borderRadius: "16px",
                   }}
                 >
-                  <h2 className="accordion-header" id="headingThree">
+                  <h2 className="accordion-header" id="flush-headingThree">
                     <button
                       className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-controls="collapseThree"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
                       style={{ padding: "24px" }}
                     >
                       Можно ли работать SEO-экспертом после окончания курса?
                     </button>
                   </h2>
                   <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div className="accordion-body">
                       <ul>
@@ -2252,23 +2267,24 @@ export default function Home() {
                     borderRadius: "16px",
                   }}
                 >
-                  <h2 className="accordion-header" id="headingFour">
+                  <h2 className="accordion-header" id="flush-headingFour">
                     <button
                       className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-controls="collapseFour"
+                      data-bs-target="#flush-collapseFour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFour"
                       style={{ padding: "24px" }}
                     >
                       Предоставляются ли документы после окончания курса?
                     </button>
                   </h2>
                   <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFour"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div className="accordion-body">
                       <ul>
@@ -2291,23 +2307,24 @@ export default function Home() {
                     borderRadius: "16px",
                   }}
                 >
-                  <h2 className="accordion-header" id="headingFive">
+                  <h2 className="accordion-header" id="flush-headingFive">
                     <button
                       className="accordion-button collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-controls="collapseFive"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
                       style={{ padding: "24px" }}
                     >
                       Как проходит оплата курса?
                     </button>
                   </h2>
                   <div
-                    id="collapseFive"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingFive"
+                    data-bs-parent="#accordionFlushExample"
                   >
                     <div className="accordion-body">
                       <ul>

@@ -12,7 +12,7 @@ const Header = styled.div`
   }
   a {
     text-decoration: none;
-    color: black;
+    color: #2A2941;
   }
   li {
     list-style-type: none;
