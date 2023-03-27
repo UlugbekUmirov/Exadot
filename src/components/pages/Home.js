@@ -1020,7 +1020,7 @@ const Homee = styled.div`
     }
   }
 
-  @media (max-width: 557px) {
+  @media (max-width: 558px) {
     .kurs3 {
       top: 45%;
       left: 38%;
